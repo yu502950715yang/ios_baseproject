@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		094DC2342A0B977B1DF38A40 /* libPods-BasicProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AB182138A3686751FDE5A0 /* libPods-BasicProject.a */; };
-		18A962261F7CC27D00E10E8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962251F7CC27D00E10E8A /* main.m */; };
-		18A962291F7CC27D00E10E8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962281F7CC27D00E10E8A /* AppDelegate.m */; };
-		18A9622C1F7CC27D00E10E8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9622B1F7CC27D00E10E8A /* ViewController.m */; };
-		18A9622F1F7CC27D00E10E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A9622D1F7CC27D00E10E8A /* Main.storyboard */; };
+		180028761FA3310F00C98014 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180028751FA3310F00C98014 /* UIView+Addition.m */; };
+		1800287C1FA3340400C98014 /* NSObject+Current.m in Sources */ = {isa = PBXBuildFile; fileRef = 1800287A1FA3340400C98014 /* NSObject+Current.m */; };
+		18A08C341FA315D800AC3FEC /* NetworkConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9625B1F7CC42400E10E8A /* NetworkConnections.m */; };
+		18A08C351FA3162B00AC3FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962251F7CC27D00E10E8A /* main.m */; };
+		18A08C361FA3163800AC3FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962281F7CC27D00E10E8A /* AppDelegate.m */; };
+		18A08C391FA3175300AC3FEC /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A08C381FA3175300AC3FEC /* Menu.storyboard */; };
+		18A08C401FA31D2D00AC3FEC /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A08C3F1FA31D2D00AC3FEC /* MenuViewController.m */; };
 		18A962311F7CC27D00E10E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A962301F7CC27D00E10E8A /* Assets.xcassets */; };
 		18A962341F7CC27D00E10E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A962321F7CC27D00E10E8A /* LaunchScreen.storyboard */; };
 		18A9623F1F7CC27D00E10E8A /* BasicProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9623E1F7CC27D00E10E8A /* BasicProjectTests.m */; };
 		18A9624A1F7CC27D00E10E8A /* BasicProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962491F7CC27D00E10E8A /* BasicProjectUITests.m */; };
-		18A9625C1F7CC42400E10E8A /* NetworkConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9625B1F7CC42400E10E8A /* NetworkConnections.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180028741FA3310F00C98014 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		180028751FA3310F00C98014 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		1800287A1FA3340400C98014 /* NSObject+Current.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Current.m"; path = "../../../../../郎创/英语/Paggy-Sloth/Helper/Category/NSObject+Current.m"; sourceTree = "<group>"; };
+		1800287B1FA3340400C98014 /* NSObject+Current.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Current.h"; path = "../../../../../郎创/英语/Paggy-Sloth/Helper/Category/NSObject+Current.h"; sourceTree = "<group>"; };
+		18A08C381FA3175300AC3FEC /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		18A08C3E1FA31D2D00AC3FEC /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		18A08C3F1FA31D2D00AC3FEC /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		18A962211F7CC27D00E10E8A /* BasicProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A962251F7CC27D00E10E8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18A962271F7CC27D00E10E8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18A962281F7CC27D00E10E8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18A9622A1F7CC27D00E10E8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18A9622B1F7CC27D00E10E8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		18A9622E1F7CC27D00E10E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18A962301F7CC27D00E10E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A962331F7CC27D00E10E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A962351F7CC27D00E10E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,11 +92,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		181AFC841F7CD4590048CDF0 /* Toast */ = {
+		18A08C291FA305D200AC3FEC /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				18A08C2B1FA3061700AC3FEC /* storyboard */,
+				18A08C2A1FA305F800AC3FEC /* ViewController */,
 			);
-			path = Toast;
+			path = VC;
+			sourceTree = "<group>";
+		};
+		18A08C2A1FA305F800AC3FEC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18A08C3A1FA31CF600AC3FEC /* Menu */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18A08C2B1FA3061700AC3FEC /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				18A08C371FA3172A00AC3FEC /* Menu */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		18A08C371FA3172A00AC3FEC /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				18A08C381FA3175300AC3FEC /* Menu.storyboard */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		18A08C3A1FA31CF600AC3FEC /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				18A08C3E1FA31D2D00AC3FEC /* MenuViewController.h */,
+				18A08C3F1FA31D2D00AC3FEC /* MenuViewController.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		18A08C481FA32AFD00AC3FEC /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				1800287B1FA3340400C98014 /* NSObject+Current.h */,
+				1800287A1FA3340400C98014 /* NSObject+Current.m */,
+				180028741FA3310F00C98014 /* UIView+Addition.h */,
+				180028751FA3310F00C98014 /* UIView+Addition.m */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 		18A962181F7CC27D00E10E8A = {
@@ -118,12 +170,10 @@
 		18A962231F7CC27D00E10E8A /* BasicProject */ = {
 			isa = PBXGroup;
 			children = (
+				18A08C291FA305D200AC3FEC /* VC */,
 				18A962571F7CC2A000E10E8A /* Tool(各种工具类) */,
 				18A962271F7CC27D00E10E8A /* AppDelegate.h */,
 				18A962281F7CC27D00E10E8A /* AppDelegate.m */,
-				18A9622A1F7CC27D00E10E8A /* ViewController.h */,
-				18A9622B1F7CC27D00E10E8A /* ViewController.m */,
-				18A9622D1F7CC27D00E10E8A /* Main.storyboard */,
 				18A962301F7CC27D00E10E8A /* Assets.xcassets */,
 				18A962321F7CC27D00E10E8A /* LaunchScreen.storyboard */,
 				18A962351F7CC27D00E10E8A /* Info.plist */,
@@ -161,7 +211,7 @@
 		18A962571F7CC2A000E10E8A /* Tool(各种工具类) */ = {
 			isa = PBXGroup;
 			children = (
-				181AFC841F7CD4590048CDF0 /* Toast */,
+				18A08C481FA32AFD00AC3FEC /* Additions */,
 				18A962581F7CC3AD00E10E8A /* Network(网络) */,
 			);
 			name = "Tool(各种工具类)";
@@ -274,7 +324,6 @@
 				TargetAttributes = {
 					18A962201F7CC27D00E10E8A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = VQAUK2EN6T;
 						ProvisioningStyle = Automatic;
 					};
 					18A962391F7CC27D00E10E8A = {
@@ -314,9 +363,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A08C391FA3175300AC3FEC /* Menu.storyboard in Resources */,
 				18A962341F7CC27D00E10E8A /* LaunchScreen.storyboard in Resources */,
 				18A962311F7CC27D00E10E8A /* Assets.xcassets in Resources */,
-				18A9622F1F7CC27D00E10E8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,10 +441,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A9625C1F7CC42400E10E8A /* NetworkConnections.m in Sources */,
-				18A9622C1F7CC27D00E10E8A /* ViewController.m in Sources */,
-				18A962291F7CC27D00E10E8A /* AppDelegate.m in Sources */,
-				18A962261F7CC27D00E10E8A /* main.m in Sources */,
+				18A08C361FA3163800AC3FEC /* AppDelegate.m in Sources */,
+				180028761FA3310F00C98014 /* UIView+Addition.m in Sources */,
+				18A08C351FA3162B00AC3FEC /* main.m in Sources */,
+				1800287C1FA3340400C98014 /* NSObject+Current.m in Sources */,
+				18A08C341FA315D800AC3FEC /* NetworkConnections.m in Sources */,
+				18A08C401FA31D2D00AC3FEC /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,14 +482,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		18A9622D1F7CC27D00E10E8A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18A9622E1F7CC27D00E10E8A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18A962321F7CC27D00E10E8A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -545,7 +588,7 @@
 			baseConfigurationReference = 3635B78C44D79BCD87243728 /* Pods-BasicProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VQAUK2EN6T;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BasicProject;
@@ -558,7 +601,7 @@
 			baseConfigurationReference = DF4C7145996057E3EE2FC338 /* Pods-BasicProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VQAUK2EN6T;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BasicProject;

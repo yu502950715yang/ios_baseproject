@@ -8,6 +8,7 @@
 
 #import "NetworkConnections.h"
 #import "AFNetworking.h"
+#import "UIView+Addition.h"
 
 @implementation NetworkConnections
 
@@ -16,16 +17,16 @@
     [[AFNetworkReachabilityManager sharedManager ] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         switch (status) {
             case -1:
-                NSLog(@"未知网络");
+                [[self topViewController].view lc_showToastMessage:@"未知网络"];
                 break;
             case 0:
-                NSLog(@"网络不可达");
+                [[self topViewController].view lc_showToastMessage:@"网络不可达"];
                 break;
             case 1:
-                NSLog(@"GPRS网络");
+                [[self topViewController].view lc_showToastMessage:@"GPRS网络"];
                 break;
             case 2:
-                NSLog(@"wifi网络");
+                [[self topViewController].view lc_showToastMessage:@"wifi网络"];
                 break;
             default:
                 break;
