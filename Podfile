@@ -5,5 +5,6 @@ target 'BasicProject' do
 pod 'AFNetworking'
 pod 'MBProgressHUD'
 pod 'Masonry'
+pod 'IQKeyboardManager'
 
 end
