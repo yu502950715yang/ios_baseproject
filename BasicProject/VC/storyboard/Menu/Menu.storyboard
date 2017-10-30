@@ -13,7 +13,6 @@
         <!--Menu View Controller-->
         <scene sceneID="bpS-4W-gdV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xth-Ea-zyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Hyr-KG-mEm" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGu-4b-Qzr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -64,6 +63,7 @@
                         <outlet property="menuTV" destination="0fa-zr-CFD" id="O8N-EI-yRa"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xth-Ea-zyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-28" y="-373"/>
         </scene>

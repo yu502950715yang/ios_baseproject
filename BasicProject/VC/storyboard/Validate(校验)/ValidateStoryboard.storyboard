@@ -14,7 +14,7 @@
         <scene sceneID="yal-9Q-aad">
             <objects>
                 <viewController storyboardIdentifier="ValidateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J4d-c1-9z9" customClass="ValidateViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uvo-Qo-kyK" customClass="UIScrollView">
+                    <view key="view" contentMode="scaleToFill" id="Uvo-Qo-kyK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -26,7 +26,7 @@
                             <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="woP-VL-9WT">
                                 <rect key="frame" x="20" y="122" width="335" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TEn-aX-zBz">
                                 <rect key="frame" x="20" y="185" width="335" height="30"/>
