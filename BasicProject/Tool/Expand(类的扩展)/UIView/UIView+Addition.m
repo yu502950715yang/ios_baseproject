@@ -8,6 +8,8 @@
 
 #import "UIView+Addition.h"
 #import "AppDelegate.h"
+#import "LoadingView.h"
+#import <Masonry.h>
 
 @implementation UIView (Addition)
 
@@ -129,5 +131,26 @@
 -(void)lc_setCornerRadius:(CGFloat)radius{
     [self.layer setMasksToBounds:YES];
     [self.layer setCornerRadius:radius];
+}
+
+#pragma mark -----------loading------------
+/**
+ 带提示的loading
+ @param message 提示信息
+ */
+- (void)showLoadingWithMessage:(NSString *)message {
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    [window addSubview:[LoadingView shareadInstance]];
+    [LoadingView shareadInstance].loadingInfo = message;
+    [[LoadingView shareadInstance] mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
+}
+
+/**
+ 移除lodaing
+ */
+- (void)dismissLoading {
+    [[LoadingView shareadInstance] removeFromSuperview];
 }
 @end

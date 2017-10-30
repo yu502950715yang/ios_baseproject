@@ -23,10 +23,22 @@
 @property (assign, nonatomic) CGPoint lc_origin;
 @property (assign, nonatomic) CGPoint lc_center;
 
+#pragma mark toast提示
 -(void)lc_showToastMessage:(NSString*)message;
 
 -(MBProgressHUD*)lc_showHUD;
 
 -(void)lc_setCornerRadius:(CGFloat)radius;
+
+#pragma mark - 移除loading图
+/** 移除loading图 */
+- (void)dismissLoading;
+
+#pragma mark - 展示带说明信息的loading图
+/**
+ 带说明信息loading图
+ @param message 说明信息
+ */
+- (void)showLoadingWithMessage:(NSString *)message;
 
 @end

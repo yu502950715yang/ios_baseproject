@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "NetworkConnections.h"
 #import "ZXCGlobalTimer.h"
+#import "UIView+Addition.h"
 
 @interface MenuViewController ()
 
@@ -17,6 +18,8 @@
 @property (strong, nonatomic) NSArray *menuArray;
 
 @property (assign, nonatomic) NSInteger index;//定时任务的队列 assign表示直接赋值，用于基本数据类型（NSInteger和CGFloat）和C数据类型（入int，float，double，char等）另外还有id类型，这个修饰符不会牵涉到内存管理，但是如果是对象类型，使用此修饰符则可能会导致内存泄漏或EXC_BAD_ACCESS错误。
+
+@property (assign, nonatomic) NSInteger timeIndex;//用于记录定时任务执行了多长时间
 
 @end
 
@@ -59,21 +62,52 @@
             [[NetworkConnections alloc] netWorkState];
             break;
         case 1://定时任务
-           _index = [[ZXCCycleTimer shareInstance]addQueueWithTimeInterval:1 Block:^(NSInteger queueId) {
-                NSLog(@"每隔一秒调用一次");
-            }];
+            [self startTimer];
             break;
         case 2://取消定时任务
-            [[ZXCCycleTimer shareInstance]removeByIndex:_index];
+            [self stopTimer];
+            break;
+        case 3://loading
+            [self showLoading];
+            break;
         default:
             break;
     }
 }
 
+#pragma mark loading展示
+- (void)showLoading {
+    [self.view showLoadingWithMessage:@"加载中。。。"];
+    //3秒后移除loading
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.view dismissLoading];
+    });
+}
+
+#pragma mark 定时任务
+/**
+ 开始定时任务
+ */
+- (void)startTimer {
+    [self.view lc_showToastMessage:@"定时任务开始"];
+    _timeIndex = 0;
+    _index = [[ZXCCycleTimer shareInstance]addQueueWithTimeInterval:1 Block:^(NSInteger queueId) {
+        _timeIndex++;
+    }];
+}
+/**
+ 取消定时任务
+ */
+- (void)stopTimer {
+    [self.view lc_showToastMessage:[NSString stringWithFormat:@"定时任务执行了%lds",(long)_timeIndex]];
+    _timeIndex = 0;
+    [[ZXCCycleTimer shareInstance]removeByIndex:_index];
+}
+
 #pragma mark 懒加载
 - (NSArray *) menuArray {
     if (_menuArray == nil) {
-        _menuArray = [NSArray arrayWithObjects:@"判断当前网络状态",@"定时任务",@"取消定时任务", nil];
+        _menuArray = [NSArray arrayWithObjects:@"判断当前网络状态",@"定时任务（开始）",@"取消定时任务",@"loading", nil];
     }
     return _menuArray;
 }

@@ -4,5 +4,6 @@ target 'BasicProject' do
 
 pod 'AFNetworking'
 pod 'MBProgressHUD'
+pod 'Masonry'
 
 end
