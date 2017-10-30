@@ -186,21 +186,21 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		188E9FCA1FA6FF3200995597 /* Validate(验证码) */ = {
+		188E9FCA1FA6FF3200995597 /* Validate(校验) */ = {
 			isa = PBXGroup;
 			children = (
 				188E9FCB1FA6FF8D00995597 /* ValidateStoryboard.storyboard */,
 			);
-			path = "Validate(验证码)";
+			path = "Validate(校验)";
 			sourceTree = "<group>";
 		};
-		188E9FCD1FA7012C00995597 /* Validate(验证码) */ = {
+		188E9FCD1FA7012C00995597 /* Validate(校验) */ = {
 			isa = PBXGroup;
 			children = (
 				188E9FCE1FA7014F00995597 /* ValidateViewController.h */,
 				188E9FCF1FA7014F00995597 /* ValidateViewController.m */,
 			);
-			path = "Validate(验证码)";
+			path = "Validate(校验)";
 			sourceTree = "<group>";
 		};
 		18A08C291FA305D200AC3FEC /* VC */ = {
@@ -215,7 +215,7 @@
 		18A08C2A1FA305F800AC3FEC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				188E9FCD1FA7012C00995597 /* Validate(验证码) */,
+				188E9FCD1FA7012C00995597 /* Validate(校验) */,
 				18A08C3A1FA31CF600AC3FEC /* Menu */,
 			);
 			path = ViewController;
@@ -224,7 +224,7 @@
 		18A08C2B1FA3061700AC3FEC /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				188E9FCA1FA6FF3200995597 /* Validate(验证码) */,
+				188E9FCA1FA6FF3200995597 /* Validate(校验) */,
 				18A08C371FA3172A00AC3FEC /* Menu */,
 			);
 			path = storyboard;

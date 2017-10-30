@@ -7,6 +7,7 @@
 //
 
 #import "ValidateViewController.h"
+#import "NSString+Verify.h"
 
 @interface ValidateViewController ()
 
