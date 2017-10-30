@@ -15,6 +15,9 @@
 		188E9FB91FA6C46200995597 /* NSObject+Current.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FB71FA6C40A00995597 /* NSObject+Current.m */; };
 		188E9FBA1FA6C46700995597 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 180028751FA3310F00C98014 /* UIView+Addition.m */; };
 		188E9FC51FA6CFB500995597 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FC41FA6CFB500995597 /* LoadingView.m */; };
+		188E9FC91FA6FD6A00995597 /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FC81FA6FD6A00995597 /* NSString+Verify.m */; };
+		188E9FCC1FA6FF8D00995597 /* ValidateStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188E9FCB1FA6FF8D00995597 /* ValidateStoryboard.storyboard */; };
+		188E9FD01FA7014F00995597 /* ValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FCF1FA7014F00995597 /* ValidateViewController.m */; };
 		18A08C341FA315D800AC3FEC /* NetworkConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9625B1F7CC42400E10E8A /* NetworkConnections.m */; };
 		18A08C351FA3162B00AC3FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962251F7CC27D00E10E8A /* main.m */; };
 		18A08C361FA3163800AC3FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962281F7CC27D00E10E8A /* AppDelegate.m */; };
@@ -59,6 +62,11 @@
 		188E9FB81FA6C40A00995597 /* NSObject+Current.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Current.h"; sourceTree = "<group>"; };
 		188E9FC31FA6CFB500995597 /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		188E9FC41FA6CFB500995597 /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		188E9FC71FA6FD6A00995597 /* NSString+Verify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
+		188E9FC81FA6FD6A00995597 /* NSString+Verify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
+		188E9FCB1FA6FF8D00995597 /* ValidateStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ValidateStoryboard.storyboard; sourceTree = "<group>"; };
+		188E9FCE1FA7014F00995597 /* ValidateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateViewController.h; sourceTree = "<group>"; };
+		188E9FCF1FA7014F00995597 /* ValidateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateViewController.m; sourceTree = "<group>"; };
 		18A08C381FA3175300AC3FEC /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		18A08C3E1FA31D2D00AC3FEC /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		18A08C3F1FA31D2D00AC3FEC /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 		188E9FB21FA6C38E00995597 /* Expand(类的扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				188E9FC61FA6FD2100995597 /* NSString */,
 				188E9FB41FA6C3E200995597 /* NSObject */,
 				188E9FB31FA6C3C300995597 /* UIView */,
 			);
@@ -168,6 +177,32 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
+		188E9FC61FA6FD2100995597 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				188E9FC71FA6FD6A00995597 /* NSString+Verify.h */,
+				188E9FC81FA6FD6A00995597 /* NSString+Verify.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		188E9FCA1FA6FF3200995597 /* Validate(验证码) */ = {
+			isa = PBXGroup;
+			children = (
+				188E9FCB1FA6FF8D00995597 /* ValidateStoryboard.storyboard */,
+			);
+			path = "Validate(验证码)";
+			sourceTree = "<group>";
+		};
+		188E9FCD1FA7012C00995597 /* Validate(验证码) */ = {
+			isa = PBXGroup;
+			children = (
+				188E9FCE1FA7014F00995597 /* ValidateViewController.h */,
+				188E9FCF1FA7014F00995597 /* ValidateViewController.m */,
+			);
+			path = "Validate(验证码)";
+			sourceTree = "<group>";
+		};
 		18A08C291FA305D200AC3FEC /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +215,7 @@
 		18A08C2A1FA305F800AC3FEC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				188E9FCD1FA7012C00995597 /* Validate(验证码) */,
 				18A08C3A1FA31CF600AC3FEC /* Menu */,
 			);
 			path = ViewController;
@@ -188,6 +224,7 @@
 		18A08C2B1FA3061700AC3FEC /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				188E9FCA1FA6FF3200995597 /* Validate(验证码) */,
 				18A08C371FA3172A00AC3FEC /* Menu */,
 			);
 			path = storyboard;
@@ -430,6 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188E9FCC1FA6FF8D00995597 /* ValidateStoryboard.storyboard in Resources */,
 				18A08C391FA3175300AC3FEC /* Menu.storyboard in Resources */,
 				18A962341F7CC27D00E10E8A /* LaunchScreen.storyboard in Resources */,
 				18A962311F7CC27D00E10E8A /* Assets.xcassets in Resources */,
@@ -510,12 +548,14 @@
 			files = (
 				188E9FBA1FA6C46700995597 /* UIView+Addition.m in Sources */,
 				188E9FB91FA6C46200995597 /* NSObject+Current.m in Sources */,
+				188E9FD01FA7014F00995597 /* ValidateViewController.m in Sources */,
 				188E9FAE1FA6B6BB00995597 /* ZXCBlockQueue.m in Sources */,
 				188E9FB11FA6B6BB00995597 /* ZXCQueue.m in Sources */,
 				18A08C361FA3163800AC3FEC /* AppDelegate.m in Sources */,
 				188E9FB01FA6B6BB00995597 /* ZXCCycleTimer.m in Sources */,
 				188E9FC51FA6CFB500995597 /* LoadingView.m in Sources */,
 				18A08C351FA3162B00AC3FEC /* main.m in Sources */,
+				188E9FC91FA6FD6A00995597 /* NSString+Verify.m in Sources */,
 				188E9FAF1FA6B6BB00995597 /* ZXCCountDownBlockObj.m in Sources */,
 				18A08C341FA315D800AC3FEC /* NetworkConnections.m in Sources */,
 				18A08C401FA31D2D00AC3FEC /* MenuViewController.m in Sources */,

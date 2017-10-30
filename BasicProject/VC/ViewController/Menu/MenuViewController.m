@@ -27,7 +27,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     //tableview隐藏多余cell
     self.menuTV.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
@@ -35,6 +34,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //隐藏navigationbar
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    //显示navigationbar
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 
 #pragma mark tableViewDelegate
@@ -70,9 +81,18 @@
         case 3://loading
             [self showLoading];
             break;
+        case 4://跳转到验证页面
+            [self goToValidatePage];
+            break;
         default:
             break;
     }
+}
+
+#pragma mark 跳转验证页面
+- (void)goToValidatePage {
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"ValidateStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"ValidateViewController"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark loading展示
@@ -107,7 +127,7 @@
 #pragma mark 懒加载
 - (NSArray *) menuArray {
     if (_menuArray == nil) {
-        _menuArray = [NSArray arrayWithObjects:@"判断当前网络状态",@"定时任务（开始）",@"取消定时任务",@"loading", nil];
+        _menuArray = [NSArray arrayWithObjects:@"判断当前网络状态",@"定时任务（开始）",@"取消定时任务",@"loading",@"正则校验", nil];
     }
     return _menuArray;
 }
