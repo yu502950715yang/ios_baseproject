@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //隐藏多余cell
+    //tableview隐藏多余cell
     self.menuTV.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
