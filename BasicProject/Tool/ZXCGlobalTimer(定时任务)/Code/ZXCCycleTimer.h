@@ -87,7 +87,7 @@
  @param endBlock 结束回调(主线程中执行)
  @return 定时任务索引值
  */
--(NSInteger)addCountDownWithTimeInterval:(NSTimeInterval)timeInterval endBlock:(void(^)())endBlock;
+-(NSInteger)addCountDownWithTimeInterval:(NSTimeInterval)timeInterval endBlock:(void(^)(void))endBlock;
 
 
 /**

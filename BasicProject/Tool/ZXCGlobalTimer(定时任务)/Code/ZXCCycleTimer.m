@@ -455,7 +455,7 @@ static ZXCCycleTimer * shareObj = nil;
     
 }
 
--(NSInteger)addCountDownWithTimeInterval:(NSTimeInterval)timeInterval endBlock:(void(^)())endBlock{
+-(NSInteger)addCountDownWithTimeInterval:(NSTimeInterval)timeInterval endBlock:(void(^)(void))endBlock{
     
     NSInteger index = [self randNumNotInIndex];
     

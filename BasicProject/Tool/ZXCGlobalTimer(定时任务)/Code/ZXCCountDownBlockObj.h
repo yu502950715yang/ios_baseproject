@@ -28,7 +28,7 @@
 /**
  结束回调
  */
-@property (nonatomic,copy) void(^endBlock)() ;
+@property (nonatomic,copy) void(^endBlock)(void) ;
 
 
 /**
