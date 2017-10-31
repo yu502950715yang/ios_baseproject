@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		094DC2342A0B977B1DF38A40 /* libPods-BasicProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AB182138A3686751FDE5A0 /* libPods-BasicProject.a */; };
+		181B33401FA84C1B0064E78B /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B333F1FA84C1B0064E78B /* MD5.m */; };
 		188E9FAE1FA6B6BB00995597 /* ZXCBlockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FA61FA6B6BB00995597 /* ZXCBlockQueue.m */; };
 		188E9FAF1FA6B6BB00995597 /* ZXCCountDownBlockObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FA81FA6B6BB00995597 /* ZXCCountDownBlockObj.m */; };
 		188E9FB01FA6B6BB00995597 /* ZXCCycleTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FAA1FA6B6BB00995597 /* ZXCCycleTimer.m */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		180028741FA3310F00C98014 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
 		180028751FA3310F00C98014 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		181B333E1FA84C1B0064E78B /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		181B333F1FA84C1B0064E78B /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
 		188E9FA51FA6B6BB00995597 /* ZXCBlockQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCBlockQueue.h; sourceTree = "<group>"; };
 		188E9FA61FA6B6BB00995597 /* ZXCBlockQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXCBlockQueue.m; sourceTree = "<group>"; };
 		188E9FA71FA6B6BB00995597 /* ZXCCountDownBlockObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCCountDownBlockObj.h; sourceTree = "<group>"; };
@@ -116,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181B333D1FA84C1B0064E78B /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				181B333E1FA84C1B0064E78B /* MD5.h */,
+				181B333F1FA84C1B0064E78B /* MD5.m */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
 		188E9FA31FA6B6BB00995597 /* ZXCGlobalTimer(定时任务) */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +325,7 @@
 		18A962571F7CC2A000E10E8A /* Tool(各种工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				181B333D1FA84C1B0064E78B /* MD5 */,
 				188E9FC21FA6CF9600995597 /* LoadingView */,
 				188E9FB21FA6C38E00995597 /* Expand(类的扩展) */,
 				188E9FA31FA6B6BB00995597 /* ZXCGlobalTimer(定时任务) */,
@@ -551,6 +564,7 @@
 			files = (
 				188E9FBA1FA6C46700995597 /* UIView+Addition.m in Sources */,
 				188E9FB91FA6C46200995597 /* NSObject+Current.m in Sources */,
+				181B33401FA84C1B0064E78B /* MD5.m in Sources */,
 				188E9FD01FA7014F00995597 /* ValidateViewController.m in Sources */,
 				188E9FAE1FA6B6BB00995597 /* ZXCBlockQueue.m in Sources */,
 				188E9FB11FA6B6BB00995597 /* ZXCQueue.m in Sources */,
