@@ -61,7 +61,7 @@ CLLocationManager *locationManager;
                 NSString *name = [addressDic objectForKey:@"Name"];
                 NSString *locationStr = [[[[state stringByAppendingString:city] stringByAppendingString:subLocality] stringByAppendingString:street] stringByAppendingString:name];
                 NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:longitude,@"longitude",latitude,@"latitude",locationStr,@"locationStr", nil];
-                [NSNotification notificationWithName:@"getLoctionMessage" object:nil userInfo:dic];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"getLoctionMessage" object:nil userInfo:dic];
             }
         } else {
             [self.view lc_showToastMessage:@"获取地理位置信息失败！"];

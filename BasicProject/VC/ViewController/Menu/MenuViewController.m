@@ -139,11 +139,8 @@
 }
 
 - (void)InfoNotificationAction:(NSNotification *)notification{
-    
     NSLog(@"%@",notification.userInfo);
-    
-    NSLog(@"---接收到通知---");
-    
+    [self.view lc_showToastMessage:[notification.userInfo valueForKey:@"locationStr"]];
 }
 
 @end
