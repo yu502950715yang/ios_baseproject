@@ -40,7 +40,6 @@
 #pragma mark 监听textfield输入内容，并对其进行验证
 -(void)textfieldDidChange:(id)sender {
     UITextField *textField = (UITextField *)sender;
-    NSLog(@"%@", textField.text);
     switch (textField.tag) {
         case 1:
             [self changeTextField:textField valid:[textField.text isValidEmail]];
