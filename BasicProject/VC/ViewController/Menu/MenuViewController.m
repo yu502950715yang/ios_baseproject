@@ -10,6 +10,7 @@
 #import "NetworkConnections.h"
 #import "ZXCGlobalTimer.h"
 #import "UIView+Addition.h"
+#import "UIViewController+Location.h"
 
 @interface MenuViewController ()
 
@@ -29,6 +30,8 @@
     [super viewDidLoad];
     //tableview隐藏多余cell
     self.menuTV.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    //注册通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(InfoNotificationAction:) name:@"getLoctionMessage" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,6 +87,9 @@
         case 4://跳转到验证页面
             [self goToValidatePage];
             break;
+        case 5://获取当前地理位置
+            [self getLocationInfo];
+            break;
         default:
             break;
     }
@@ -127,9 +133,17 @@
 #pragma mark 懒加载
 - (NSArray *) menuArray {
     if (_menuArray == nil) {
-        _menuArray = [NSArray arrayWithObjects:@"判断当前网络状态",@"定时任务（开始）",@"取消定时任务",@"loading",@"正则校验", nil];
+        _menuArray = [NSArray arrayWithObjects:@"判断当前网络状态",@"定时任务（开始）",@"取消定时任务",@"loading",@"正则校验",@"获取当前地理位置", nil];
     }
     return _menuArray;
+}
+
+- (void)InfoNotificationAction:(NSNotification *)notification{
+    
+    NSLog(@"%@",notification.userInfo);
+    
+    NSLog(@"---接收到通知---");
+    
 }
 
 @end
