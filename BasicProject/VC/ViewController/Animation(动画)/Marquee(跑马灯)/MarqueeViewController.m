@@ -7,8 +7,10 @@
 //
 
 #import "MarqueeViewController.h"
+#import "CQMarqueeView.h"
+#import "UIView+frameAdjust.h"
 
-@interface MarqueeViewController ()
+@interface MarqueeViewController ()<CQMarqueeViewDelegate>
 
 @end
 
@@ -16,22 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"跑马灯";
+    CQMarqueeView *marqueeView = [[CQMarqueeView alloc] initWithFrame:CGRectMake(0, 90, self.view.frame.size.width, 30)];
+    [self.view addSubview:marqueeView];
+    marqueeView.marqueeTextArray = @[@"第一条信息", @"第二条信息" ,@"第三条信息"];
+    marqueeView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 跑马灯view上的关闭按钮点击时回调
+- (void)marqueeView:(CQMarqueeView *)marqueeView closeButtonDidClick:(UIButton *)sender {
+    NSLog(@"点击了关闭按钮");
+    [UIView animateWithDuration:1 animations:^{
+        marqueeView.height = 0;
+    } completion:^(BOOL finished) {
+        [marqueeView removeFromSuperview];
+    }];
 }
-*/
 
 @end

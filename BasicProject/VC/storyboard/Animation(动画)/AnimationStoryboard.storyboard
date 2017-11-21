@@ -1,52 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--跑马灯-->
         <scene sceneID="T4h-Yv-p5Y">
             <objects>
-                <viewController id="11Y-L1-QwD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MarqueeViewController" title="跑马灯" id="11Y-L1-QwD" customClass="MarqueeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Kp-KP-Aj1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eVy-pc-lMZ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fbH-be-Vok">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fbH-be-Vok" id="khk-DP-th8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="lhL-RZ-Ixi" firstAttribute="trailing" secondItem="eVy-pc-lMZ" secondAttribute="trailing" id="Bwc-EI-dK9"/>
-                            <constraint firstItem="eVy-pc-lMZ" firstAttribute="leading" secondItem="lhL-RZ-Ixi" secondAttribute="leading" id="dZA-m5-UbW"/>
-                            <constraint firstItem="lhL-RZ-Ixi" firstAttribute="bottom" secondItem="eVy-pc-lMZ" secondAttribute="bottom" id="kPu-5v-rCd"/>
-                            <constraint firstItem="eVy-pc-lMZ" firstAttribute="top" secondItem="lhL-RZ-Ixi" secondAttribute="top" id="m8c-L5-EfA"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lhL-RZ-Ixi"/>
                     </view>
                     <navigationItem key="navigationItem" id="A8H-Pa-cHO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIX-wD-vop" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-980" y="141"/>
+            <point key="canvasLocation" x="-1194" y="129"/>
         </scene>
     </scenes>
 </document>

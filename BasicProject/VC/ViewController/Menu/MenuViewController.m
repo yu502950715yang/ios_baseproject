@@ -42,7 +42,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -143,6 +142,13 @@
                     }
                 }
                 break;
+            case 5://动画
+                {
+                    if (indexPath.row == 1) {//跑马灯
+                        [self goToMarqueeView];
+                    }
+                }
+                break;
             default:
                 break;
         }
@@ -152,6 +158,11 @@
 #pragma mark 跳转验证页面
 - (void)goToValidatePage {
     UIViewController *vc = [[UIStoryboard storyboardWithName:@"ValidateStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"ValidateViewController"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)goToMarqueeView {
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"AnimationStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"MarqueeViewController"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -208,6 +219,10 @@
         model5.menuTitle = @"系统地理位置";
         model5.functionList = [NSArray arrayWithObjects:@"获取当前地理位置", nil];
         [_menuArray addObject:model5];
+        MenuModel *model6 = [MenuModel new];
+        model6.menuTitle = @"各种动画效果";
+        model6.functionList = [NSArray arrayWithObjects:@"跑马灯", nil];
+        [_menuArray addObject:model6];
     }
     return _menuArray;
 }

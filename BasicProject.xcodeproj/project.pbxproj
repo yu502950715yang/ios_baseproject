@@ -15,6 +15,9 @@
 		183DC3C31FA95716003D7A1B /* AnimationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DC3C21FA95716003D7A1B /* AnimationStoryboard.storyboard */; };
 		183DC3C81FA957D2003D7A1B /* MarqueeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DC3C71FA957D1003D7A1B /* MarqueeViewController.m */; };
 		184382D41FC3D1CF0095F521 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A08C3F1FA31D2D00AC3FEC /* MenuViewController.m */; };
+		184382DC1FC3EE150095F521 /* UIView+frameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 184382D71FC3EE150095F521 /* UIView+frameAdjust.m */; };
+		184382DD1FC3EE150095F521 /* CQMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184382D81FC3EE150095F521 /* CQMarqueeView.m */; };
+		184382DE1FC3EE150095F521 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 184382D91FC3EE150095F521 /* UIColor+Util.m */; };
 		188E9FAE1FA6B6BB00995597 /* ZXCBlockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FA61FA6B6BB00995597 /* ZXCBlockQueue.m */; };
 		188E9FAF1FA6B6BB00995597 /* ZXCCountDownBlockObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FA81FA6B6BB00995597 /* ZXCCountDownBlockObj.m */; };
 		188E9FB01FA6B6BB00995597 /* ZXCCycleTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FAA1FA6B6BB00995597 /* ZXCCycleTimer.m */; };
@@ -66,6 +69,12 @@
 		183DC3C21FA95716003D7A1B /* AnimationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationStoryboard.storyboard; sourceTree = "<group>"; };
 		183DC3C61FA957D1003D7A1B /* MarqueeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarqueeViewController.h; sourceTree = "<group>"; };
 		183DC3C71FA957D1003D7A1B /* MarqueeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarqueeViewController.m; sourceTree = "<group>"; };
+		184382D61FC3EE150095F521 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		184382D71FC3EE150095F521 /* UIView+frameAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frameAdjust.m"; sourceTree = "<group>"; };
+		184382D81FC3EE150095F521 /* CQMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQMarqueeView.m; sourceTree = "<group>"; };
+		184382D91FC3EE150095F521 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		184382DA1FC3EE150095F521 /* UIView+frameAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frameAdjust.h"; sourceTree = "<group>"; };
+		184382DB1FC3EE150095F521 /* CQMarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQMarqueeView.h; sourceTree = "<group>"; };
 		188E9FA51FA6B6BB00995597 /* ZXCBlockQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCBlockQueue.h; sourceTree = "<group>"; };
 		188E9FA61FA6B6BB00995597 /* ZXCBlockQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXCBlockQueue.m; sourceTree = "<group>"; };
 		188E9FA71FA6B6BB00995597 /* ZXCCountDownBlockObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCCountDownBlockObj.h; sourceTree = "<group>"; };
@@ -185,6 +194,19 @@
 				183DC3C71FA957D1003D7A1B /* MarqueeViewController.m */,
 			);
 			path = "Marquee(跑马灯)";
+			sourceTree = "<group>";
+		};
+		184382D51FC3EE150095F521 /* CQMarqueeView(跑马灯) */ = {
+			isa = PBXGroup;
+			children = (
+				184382D61FC3EE150095F521 /* UIColor+Util.h */,
+				184382D71FC3EE150095F521 /* UIView+frameAdjust.m */,
+				184382D81FC3EE150095F521 /* CQMarqueeView.m */,
+				184382D91FC3EE150095F521 /* UIColor+Util.m */,
+				184382DA1FC3EE150095F521 /* UIView+frameAdjust.h */,
+				184382DB1FC3EE150095F521 /* CQMarqueeView.h */,
+			);
+			path = "CQMarqueeView(跑马灯)";
 			sourceTree = "<group>";
 		};
 		188E9FA31FA6B6BB00995597 /* ZXCGlobalTimer(定时任务) */ = {
@@ -388,6 +410,7 @@
 		18A962571F7CC2A000E10E8A /* Tool(各种工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				184382D51FC3EE150095F521 /* CQMarqueeView(跑马灯) */,
 				181B333D1FA84C1B0064E78B /* MD5 */,
 				188E9FC21FA6CF9600995597 /* LoadingView */,
 				188E9FB21FA6C38E00995597 /* Expand(类的扩展) */,
@@ -638,7 +661,10 @@
 				188E9FD01FA7014F00995597 /* ValidateViewController.m in Sources */,
 				188E9FAE1FA6B6BB00995597 /* ZXCBlockQueue.m in Sources */,
 				188E9FB11FA6B6BB00995597 /* ZXCQueue.m in Sources */,
+				184382DD1FC3EE150095F521 /* CQMarqueeView.m in Sources */,
+				184382DE1FC3EE150095F521 /* UIColor+Util.m in Sources */,
 				18A08C361FA3163800AC3FEC /* AppDelegate.m in Sources */,
+				184382DC1FC3EE150095F521 /* UIView+frameAdjust.m in Sources */,
 				180167C41FC3C4DE009A38E2 /* FunctionModel.m in Sources */,
 				181B33491FA85A590064E78B /* UIViewController+Location.m in Sources */,
 				188E9FB01FA6B6BB00995597 /* ZXCCycleTimer.m in Sources */,
