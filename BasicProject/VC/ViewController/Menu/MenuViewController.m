@@ -207,11 +207,10 @@
         MenuModel *model5 = [MenuModel new];
         model5.menuTitle = @"系统地理位置";
         model5.functionList = [NSArray arrayWithObjects:@"获取当前地理位置", nil];
+        [_menuArray addObject:model5];
     }
     return _menuArray;
 }
-
-
 
 #pragma mark 通知事件
 - (void)InfoNotificationAction:(NSNotification *)notification{
