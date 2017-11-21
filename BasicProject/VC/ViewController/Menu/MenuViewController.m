@@ -149,6 +149,13 @@
                     }
                 }
                 break;
+            case 6://push动画
+                {
+                    if (indexPath.row == 1) {//从下到上
+                        [self pushFromBottom];
+                    }
+                }
+                break;
             default:
                 break;
         }
@@ -164,6 +171,25 @@
 -(void)goToMarqueeView {
     UIViewController *vc = [[UIStoryboard storyboardWithName:@"AnimationStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"MarqueeViewController"];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)pushFromBottom {
+    CATransition *transition = [CATransition animation];
+//    视图控制器出现的方式
+//    CA_EXTERN NSString * const kCATransitionFade
+//    CA_EXTERN NSString * const kCATransitionMoveIn
+//    CA_EXTERN NSString * const kCATransitionPush
+//    CA_EXTERN NSString * const kCATransitionReveal
+    transition.type = kCATransitionPush;//改变视图控制器出现的方式
+//    出现的位置
+//    CA_EXTERN NSString * const kCATransitionFromRight
+//    CA_EXTERN NSString * const kCATransitionFromLeft
+//    CA_EXTERN NSString * const kCATransitionFromTop
+//    CA_EXTERN NSString * const kCATransitionFromBottom
+    transition.subtype = kCATransitionFromTop;//出现的位置
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"AnimationStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"MarqueeViewController"];
+    [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
+    [self.navigationController pushViewController:vc animated:NO];
 }
 
 #pragma mark loading展示
@@ -223,6 +249,10 @@
         model6.menuTitle = @"各种动画效果";
         model6.functionList = [NSArray arrayWithObjects:@"跑马灯", nil];
         [_menuArray addObject:model6];
+        MenuModel *model7 = [MenuModel new];
+        model7.menuTitle = @"push动画效果";
+        model7.functionList = [NSArray arrayWithObjects:@"从下面push", nil];
+        [_menuArray addObject:model7];
     }
     return _menuArray;
 }
