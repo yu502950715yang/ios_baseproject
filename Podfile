@@ -6,5 +6,6 @@ pod 'AFNetworking'
 pod 'MBProgressHUD'
 pod 'Masonry'
 pod 'IQKeyboardManager'
+pod 'MJExtension'
 
 end

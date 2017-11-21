@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		094DC2342A0B977B1DF38A40 /* libPods-BasicProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AB182138A3686751FDE5A0 /* libPods-BasicProject.a */; };
+		180167C11FC3C3F7009A38E2 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180167C01FC3C3F7009A38E2 /* MenuModel.m */; };
+		180167C41FC3C4DE009A38E2 /* FunctionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180167C31FC3C4DE009A38E2 /* FunctionModel.m */; };
 		181B33401FA84C1B0064E78B /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B333F1FA84C1B0064E78B /* MD5.m */; };
 		181B33491FA85A590064E78B /* UIViewController+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B33481FA85A590064E78B /* UIViewController+Location.m */; };
+		183DC3C31FA95716003D7A1B /* AnimationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183DC3C21FA95716003D7A1B /* AnimationStoryboard.storyboard */; };
+		183DC3C81FA957D2003D7A1B /* MarqueeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183DC3C71FA957D1003D7A1B /* MarqueeViewController.m */; };
+		184382D41FC3D1CF0095F521 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A08C3F1FA31D2D00AC3FEC /* MenuViewController.m */; };
 		188E9FAE1FA6B6BB00995597 /* ZXCBlockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FA61FA6B6BB00995597 /* ZXCBlockQueue.m */; };
 		188E9FAF1FA6B6BB00995597 /* ZXCCountDownBlockObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FA81FA6B6BB00995597 /* ZXCCountDownBlockObj.m */; };
 		188E9FB01FA6B6BB00995597 /* ZXCCycleTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 188E9FAA1FA6B6BB00995597 /* ZXCCycleTimer.m */; };
@@ -23,8 +28,7 @@
 		18A08C341FA315D800AC3FEC /* NetworkConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9625B1F7CC42400E10E8A /* NetworkConnections.m */; };
 		18A08C351FA3162B00AC3FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962251F7CC27D00E10E8A /* main.m */; };
 		18A08C361FA3163800AC3FEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A962281F7CC27D00E10E8A /* AppDelegate.m */; };
-		18A08C391FA3175300AC3FEC /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A08C381FA3175300AC3FEC /* Menu.storyboard */; };
-		18A08C401FA31D2D00AC3FEC /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A08C3F1FA31D2D00AC3FEC /* MenuViewController.m */; };
+		18A08C391FA3175300AC3FEC /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A08C381FA3175300AC3FEC /* Menu.storyboard */; settings = {ASSET_TAGS = (MenuTableViewCell, ); }; };
 		18A962311F7CC27D00E10E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A962301F7CC27D00E10E8A /* Assets.xcassets */; };
 		18A962341F7CC27D00E10E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A962321F7CC27D00E10E8A /* LaunchScreen.storyboard */; };
 		18A9623F1F7CC27D00E10E8A /* BasicProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9623E1F7CC27D00E10E8A /* BasicProjectTests.m */; };
@@ -51,10 +55,17 @@
 /* Begin PBXFileReference section */
 		180028741FA3310F00C98014 /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
 		180028751FA3310F00C98014 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		180167BF1FC3C3F7009A38E2 /* MenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		180167C01FC3C3F7009A38E2 /* MenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		180167C21FC3C4DE009A38E2 /* FunctionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionModel.h; sourceTree = "<group>"; };
+		180167C31FC3C4DE009A38E2 /* FunctionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionModel.m; sourceTree = "<group>"; };
 		181B333E1FA84C1B0064E78B /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
 		181B333F1FA84C1B0064E78B /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
 		181B33471FA85A590064E78B /* UIViewController+Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Location.h"; sourceTree = "<group>"; };
 		181B33481FA85A590064E78B /* UIViewController+Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Location.m"; sourceTree = "<group>"; };
+		183DC3C21FA95716003D7A1B /* AnimationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationStoryboard.storyboard; sourceTree = "<group>"; };
+		183DC3C61FA957D1003D7A1B /* MarqueeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarqueeViewController.h; sourceTree = "<group>"; };
+		183DC3C71FA957D1003D7A1B /* MarqueeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarqueeViewController.m; sourceTree = "<group>"; };
 		188E9FA51FA6B6BB00995597 /* ZXCBlockQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCBlockQueue.h; sourceTree = "<group>"; };
 		188E9FA61FA6B6BB00995597 /* ZXCBlockQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXCBlockQueue.m; sourceTree = "<group>"; };
 		188E9FA71FA6B6BB00995597 /* ZXCCountDownBlockObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCCountDownBlockObj.h; sourceTree = "<group>"; };
@@ -122,6 +133,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180167BE1FC3C3D7009A38E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180167BF1FC3C3F7009A38E2 /* MenuModel.h */,
+				180167C01FC3C3F7009A38E2 /* MenuModel.m */,
+				180167C21FC3C4DE009A38E2 /* FunctionModel.h */,
+				180167C31FC3C4DE009A38E2 /* FunctionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		181B333D1FA84C1B0064E78B /* MD5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +160,31 @@
 				181B33481FA85A590064E78B /* UIViewController+Location.m */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		183DC3C11FA956B6003D7A1B /* Animation(动画) */ = {
+			isa = PBXGroup;
+			children = (
+				183DC3C21FA95716003D7A1B /* AnimationStoryboard.storyboard */,
+			);
+			path = "Animation(动画)";
+			sourceTree = "<group>";
+		};
+		183DC3C41FA95756003D7A1B /* Animation(动画) */ = {
+			isa = PBXGroup;
+			children = (
+				183DC3C51FA9577B003D7A1B /* Marquee(跑马灯) */,
+			);
+			path = "Animation(动画)";
+			sourceTree = "<group>";
+		};
+		183DC3C51FA9577B003D7A1B /* Marquee(跑马灯) */ = {
+			isa = PBXGroup;
+			children = (
+				183DC3C61FA957D1003D7A1B /* MarqueeViewController.h */,
+				183DC3C71FA957D1003D7A1B /* MarqueeViewController.m */,
+			);
+			path = "Marquee(跑马灯)";
 			sourceTree = "<group>";
 		};
 		188E9FA31FA6B6BB00995597 /* ZXCGlobalTimer(定时任务) */ = {
@@ -240,6 +287,7 @@
 		18A08C2A1FA305F800AC3FEC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				183DC3C41FA95756003D7A1B /* Animation(动画) */,
 				188E9FCD1FA7012C00995597 /* Validate(校验) */,
 				18A08C3A1FA31CF600AC3FEC /* Menu */,
 			);
@@ -249,6 +297,7 @@
 		18A08C2B1FA3061700AC3FEC /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				183DC3C11FA956B6003D7A1B /* Animation(动画) */,
 				188E9FCA1FA6FF3200995597 /* Validate(校验) */,
 				18A08C371FA3172A00AC3FEC /* Menu */,
 			);
@@ -266,6 +315,7 @@
 		18A08C3A1FA31CF600AC3FEC /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				180167BE1FC3C3D7009A38E2 /* Model */,
 				18A08C3E1FA31D2D00AC3FEC /* MenuViewController.h */,
 				18A08C3F1FA31D2D00AC3FEC /* MenuViewController.m */,
 			);
@@ -449,6 +499,9 @@
 		18A962191F7CC27D00E10E8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					MenuTableViewCell,
+				);
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "余洋";
 				TargetAttributes = {
@@ -495,6 +548,7 @@
 			files = (
 				188E9FCC1FA6FF8D00995597 /* ValidateStoryboard.storyboard in Resources */,
 				18A08C391FA3175300AC3FEC /* Menu.storyboard in Resources */,
+				183DC3C31FA95716003D7A1B /* AnimationStoryboard.storyboard in Resources */,
 				18A962341F7CC27D00E10E8A /* LaunchScreen.storyboard in Resources */,
 				18A962311F7CC27D00E10E8A /* Assets.xcassets in Resources */,
 			);
@@ -575,13 +629,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184382D41FC3D1CF0095F521 /* MenuViewController.m in Sources */,
 				188E9FBA1FA6C46700995597 /* UIView+Addition.m in Sources */,
+				180167C11FC3C3F7009A38E2 /* MenuModel.m in Sources */,
+				183DC3C81FA957D2003D7A1B /* MarqueeViewController.m in Sources */,
 				188E9FB91FA6C46200995597 /* NSObject+Current.m in Sources */,
 				181B33401FA84C1B0064E78B /* MD5.m in Sources */,
 				188E9FD01FA7014F00995597 /* ValidateViewController.m in Sources */,
 				188E9FAE1FA6B6BB00995597 /* ZXCBlockQueue.m in Sources */,
 				188E9FB11FA6B6BB00995597 /* ZXCQueue.m in Sources */,
 				18A08C361FA3163800AC3FEC /* AppDelegate.m in Sources */,
+				180167C41FC3C4DE009A38E2 /* FunctionModel.m in Sources */,
 				181B33491FA85A590064E78B /* UIViewController+Location.m in Sources */,
 				188E9FB01FA6B6BB00995597 /* ZXCCycleTimer.m in Sources */,
 				188E9FC51FA6CFB500995597 /* LoadingView.m in Sources */,
@@ -589,7 +647,6 @@
 				188E9FC91FA6FD6A00995597 /* NSString+Verify.m in Sources */,
 				188E9FAF1FA6B6BB00995597 /* ZXCCountDownBlockObj.m in Sources */,
 				18A08C341FA315D800AC3FEC /* NetworkConnections.m in Sources */,
-				18A08C401FA31D2D00AC3FEC /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
