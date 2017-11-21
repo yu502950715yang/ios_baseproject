@@ -187,6 +187,7 @@
 //    CA_EXTERN NSString * const kCATransitionFromTop
 //    CA_EXTERN NSString * const kCATransitionFromBottom
     transition.subtype = kCATransitionFromTop;//出现的位置
+    transition.duration = 1.0f;//执行的时间
     UIViewController *vc = [[UIStoryboard storyboardWithName:@"AnimationStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"MarqueeViewController"];
     [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
     [self.navigationController pushViewController:vc animated:NO];
