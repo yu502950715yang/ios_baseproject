@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = NSLocalizedString(@"title", nil);
+    self.navigationItem.title = NSLocalizedString(@"title", nil);//第一个参数是建（必须）第二个参数是注释（可选）
     CQMarqueeView *marqueeView = [[CQMarqueeView alloc] initWithFrame:CGRectMake(0, 90, self.view.frame.size.width, 30)];
     [self.view addSubview:marqueeView];
     marqueeView.marqueeTextArray = @[@"第一条信息", @"第二条信息" ,@"第三条信息"];
