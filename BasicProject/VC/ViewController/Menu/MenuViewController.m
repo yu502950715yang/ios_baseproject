@@ -12,6 +12,7 @@
 #import "UIView+Addition.h"
 #import "UIViewController+Location.h"
 #import "MenuModel.h"
+#import "BlockController.h"
 
 @interface MenuViewController ()
 
@@ -139,6 +140,8 @@
                 {
                     if (indexPath.row == 1) {//获取当前地理位置
                         [self getLocationInfo];
+                    } else if (indexPath.row == 2) {//时区
+                        [self getSystemTimeZone];
                     }
                 }
                 break;
@@ -156,6 +159,13 @@
                     }
                 }
                 break;
+            case 7://回调
+                {
+                    if (indexPath.row == 1) {
+                        BlockController *blockController = [[BlockController alloc] init];
+                        [blockController start];
+                    }
+                }
             default:
                 break;
         }
@@ -243,8 +253,8 @@
         model4.functionList = [NSArray arrayWithObjects:@"正则校验", nil];
         [_menuArray addObject:model4];
         MenuModel *model5 = [MenuModel new];
-        model5.menuTitle = @"系统地理位置";
-        model5.functionList = [NSArray arrayWithObjects:@"获取当前地理位置", nil];
+        model5.menuTitle = @"系统";
+        model5.functionList = [NSArray arrayWithObjects:@"获取当前地理位置",@"获取当前时区", nil];
         [_menuArray addObject:model5];
         MenuModel *model6 = [MenuModel new];
         model6.menuTitle = @"各种动画效果";
@@ -254,6 +264,10 @@
         model7.menuTitle = @"push动画效果";
         model7.functionList = [NSArray arrayWithObjects:@"从下面push", nil];
         [_menuArray addObject:model7];
+        MenuModel *model8 = [MenuModel new];
+        model8.menuTitle = @"回调";
+        model8.functionList = [NSArray arrayWithObjects:@"Block", nil];
+        [_menuArray addObject:model8];
     }
     return _menuArray;
 }
@@ -262,6 +276,12 @@
 - (void)InfoNotificationAction:(NSNotification *)notification{
     NSLog(@"%@",notification.userInfo);
     [self.view lc_showToastMessage:[notification.userInfo valueForKey:@"locationStr"]];
+}
+
+//获取手机系统设置的时区
+-(void)getSystemTimeZone{
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSLog(@"%@",zone);
 }
 
 @end

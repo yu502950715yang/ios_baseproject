@@ -23,6 +23,9 @@
     manager.shouldResignOnTouchOutside = YES;
     manager.shouldToolbarUsesTextFieldTintColor = YES;
     manager.enableAutoToolbar = YES;
+    
+    //监听系统时区变化
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(zoneChange:) name:NSSystemTimeZoneDidChangeNotification object:nil];
     return YES;
 }
 
@@ -53,5 +56,10 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+-(void)zoneChange:(NSNotification *)note
+{
+    NSLog(@"The system time zone has changed!");
+}
 
 @end
